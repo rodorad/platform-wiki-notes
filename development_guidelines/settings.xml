@@ -1,0 +1,56 @@
+<settings>
+    <interactiveMode>false</interactiveMode>
+    <mirrors>
+        <mirror>
+            <id>nexus</id>
+            <mirrorOf>*</mirrorOf>
+            <url>http://nexus.sclab.intel.com:8080/content/groups/public</url>
+        </mirror>
+    </mirrors>
+    <profiles>
+        <profile>
+            <id>development</id>
+            <repositories>
+
+               <repository>
+                    <id>central cavern</id>
+                    <url>http://nexus.sclab.intel.com:8080/content/groups/public</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>central cavern</id>
+                    <url>http://nexus.sclab.intel.com:8080/content/groups/public</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+    <servers>
+       <server>
+            <id>snapshots</id>
+            <username>deployment</username>
+            <password>deployment123</password>
+        </server>
+        <server>
+          <id>thirdparty</id>
+          <username>deployment</username>
+          <password>deployment123</password>
+        </server>
+    </servers>
+    <activeProfiles>
+        <activeProfile>development</activeProfile>
+    </activeProfiles>
+</settings>

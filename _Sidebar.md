@@ -1,0 +1,66 @@
+**Intro**
+
+* [Overview of Trusted Analytics Platform](Overview)
+* [Getting Started Guide](Getting Started Guide)
+
+**PaaS Architecture**
+
+* [[System Access Overview]]
+* [[Application Platform]]
+* [[Data Platform]]
+* [[Primitive Services]]
+* [[ATK as a service]]
+* [[Data Acquisition]]
+* [[Platform User Interface]]
+
+**Use-cases**
+
+* [Friction](High Level Use case)
+* [Onboarding as an Operator](Onboarding)
+* [Self-service as a Data Scientist](Data Scientist Self-Service)
+* [Development as a Data Scientist](Data Scientist Model Development)
+* [Publishing as a Data Scientist](Data Scientist Publishing)
+* [Provisioning as a Developer](Use of Microservices in App)
+* [Service Metric Review as a Data Scientist](Service Metrics)
+
+**Infrastructure and Platform Deployment**
+
+* [Platform Deployment in AWS](Platform Deployment Procedure in AWS)
+* [Platform Deployment in OpenStack](Platform Deployment on OpenStack)
+* [[ATK deployment procedure using app launching service broker]]
+* [[ATK deployment procedure using app launching service broker and buildpack]]
+* [[Vagrant and Ansible Test Scripts]]
+* [[Using ELB to make HUE available]]
+* [[Installing SSL Certificate]]
+* [[Platform Monitoring]]
+
+**Development**
+
+* [[Development guidelines]]
+* [[Development environment setup]]
+* [[Build platform from sources]]
+
+**Platform Management**
+
+* [[How to Manage Organizations and Spaces]]
+* [[User Management]]
+
+**Platform Tips and Tricks**
+
+* [[FAQs]] (including Getting Started)
+* [[Tips and Tricks for Java]]
+* [[Accessing MySQL DB via PhpMyAdmin]]
+* [[Using Data Catalog to download files from S3]]
+* [[Docker Services]]
+
+**Platform Configurations**
+
+* [[Pricing Matrix for AWS Deployments]]
+* [[Pricing Matrix for OpenStack Deployments]]
+
+**Good Items to read/Resources**
+
+* [Microservices Patterns](http://microservices.io/patterns)
+* [[ATK Overview]]
+* [[Cloud Foundry Resources]]
+* [[Cloudera Resources]]
