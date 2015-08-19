@@ -6,11 +6,11 @@
 
 # Latest
 
-![](https://github.com/intel-data/platform-wiki/blob/master/wikiImages/TAP-platform-purpose.png)
+![](https://github.com/trustedanalytics/platform-wiki/blob/master/wikiImages/TAP-platform-purpose.png)
 
 # Logical components 
 
-![](https://github.com/intel-data/platform-wiki/blob/master/wikiImages/TAP-platform-processing.png)
+![](https://github.com/trustedanalytics/platform-wiki/blob/master/wikiImages/TAP-platform-processing.png)
 
 
  
