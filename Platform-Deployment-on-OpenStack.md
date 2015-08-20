@@ -108,6 +108,8 @@ Use any editor you like to edit the _terraform.tfvars_ file.
  19 https_proxy="{set proxy}" # comment if not needed
  20 dns1="{dns server}" # comment if not needed
  21 dns2=”{dns server}" # comment if not needed
+ 22 cf_release_version="211" #211 is currently the only supported version
+ 23 cf_boshworkspace_version="master" #we need to take the head of the repository because of needed fixes
 ```
 For the _trustedanalytics/docker-services-boshworkspace_ repository until it will be opensourced (made public) there is a need to use github oauth token (user:token) below should be added to variable file:
 ```
@@ -117,6 +119,43 @@ gh_auth="user:token"
 After you set all variables, run the following:
 ```
 make update
+
+Currently, the open sourced version requires three changes to work before running `make apply`. You need to manually change the following files in the `platform-ansible` subdirectory:
+```bash
+>>> site.yml
+change:
+#install ATK client on all hosts
+- hosts: cdh-all-nodes
+  vars_files:
+    - defaults/proxy.yml
+  roles:
+    - cloudera_atk_client
+to:
+#install ATK client on all hosts
+#- hosts: cdh-all-nodes
+#  vars_files:
+#    - defaults/proxy.yml
+#  roles:
+#    - cloudera_atk_client
+
+>>> roles/cloudera_api_manager/tasks/cluster.yml
+change:
+  cdh: action=create_cluster version={{ cdh_packages_version }} license={{ cdh_license }}
+to:
+  cdh: action=create_cluster version={{ cdh_packages_version }}
+
+>>> roles/cloudera_api_manager/tasks/main.yml
+change:
+- name: include gearpump role creation
+  include: gearpump.yml
+to:
+#- name: include gearpump role creation
+#  include: gearpump.yml
+```
+
+This will stop the ATK client and Gearpump installation. We will fix that in the near future.
+
+```
 make plan
 make apply
 make provision
