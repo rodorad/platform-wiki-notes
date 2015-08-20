@@ -20,8 +20,7 @@ The only thing, you should do differently than PEP8 recommends are docstrings. F
         def example_method(self, count):
             """
             This method creates a list of consecutive numbers of the given length.
-            :param count: Length of the requested list.
-            :type count: int
+            :param int count: Length of the requested list.
             :returns: A list of consecutive numbers, starting from 0.
             :rtype: list[int]
             :raises ValueError: When count is less than zero.
