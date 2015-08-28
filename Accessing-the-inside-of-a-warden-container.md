@@ -1,12 +1,12 @@
 This document explains how to get inside a warden container that runs a given application.
 
 The following is assumed:
-- `jq` is installed on all of the machines we will be using (it's as simple as `apt-get install jq` if you don't have it)
-- `alamakota` is the administrator password
-- `butla-rest-demo.example.com` is the url the application is using
+- `jq` is installed on all of the machines we will be using (it's as simple as `apt-get install jq` if you don't have it).
+- `alamakota` is the administrator password.
+- `butla-rest-demo.example.com` is the url the application is using.
 
 ### Jumpbox
-Connect to the jumpbox and change the current directory to `~/workspace/deployments/cf-boshworkspace`
+Connect to the jumpbox and change the current directory to `~/workspace/deployments/cf-boshworkspace`.
 
 ### Gorouter IP
 Find the IP address of the machine with the gorouter: `bosh vms | awk -F\| '/api/{ print $5 }'`. 
