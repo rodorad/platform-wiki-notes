@@ -46,8 +46,4 @@
 * Platform Configurations
    - [[Pricing Matrix for AWS Deployments]]
    - [[Pricing Matrix for OpenStack Deployments]]
-* Good Items to read/Resources
-   - [Microservices Patterns](http://microservices.io/patterns)
    - [[ATK Overview]]
-   - [[Cloud Foundry Resources]]
-   - [[Cloudera Resources]]
