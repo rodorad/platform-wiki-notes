@@ -39,7 +39,7 @@ You can create an Intel® Analytics Toolkit for Apache Hadoop* software server d
 
 9. Before installing the toolkit Python client, you must first install NumPy and Pandas through Anaconda. Open a command line terminal and run the following command:
 
-    `$ pip install --extra-index-url http://host.gao.intel.com/pypi/master/simple intelanalytics`
+    `$ pip install --extra-index-url https://pypi.analyticstoolkit.intel.com/latest/simple/ trustedanalytics`
 
     All the dependencies for the Intel® Analytics Toolkit for Apache Hadoop* software package will be installed automatically.
 
@@ -49,7 +49,7 @@ You can create an Intel® Analytics Toolkit for Apache Hadoop* software server d
 
 9. After installing Python 2.7 and pip, run the following command to install the toolkit client:
 
-    `$ pip install --extra-index-url http://host.gao.intel.com/pypi/master/simple intelanalytics`
+    `$ pip install --extra-index-url https://pypi.analyticstoolkit.intel.com/latest/simple/ trustedanalytics`
 
 ### Download the toolkit client on the platform
 
@@ -58,7 +58,7 @@ You can create an Intel® Analytics Toolkit for Apache Hadoop* software server d
 
 9. Once it is downloaded, you can install it with the following command:
 
-    `pip install ./intelanalytics-{VERSION}.tar.gz`
+    `pip install ./trustedanalytics-{VERSION}.tar.gz`
 
 Note that the toolkit client delivered here may be not the latest version.
 (Update requires rebuild of file-server service.) 
