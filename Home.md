@@ -1,7 +1,6 @@
 ## Wiki for Trusted Analytics Platform  
 
 * [Overview of Trusted Analytics Platform](Overview)
-* [How to contribute to to the project](JIRAProject)
 * [Getting Started Guide](Getting Started Guide)
 * Paas Architecture
   - [[System Access Overview]]
