@@ -1,5 +1,3 @@
-# Jira project for Trusted Analytics Platform
-
 There is a JIRA project for Trusted Analytics Platform: https://trustedanalytics.atlassian.net
 
 This is the place where you can do the following:
