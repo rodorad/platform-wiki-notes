@@ -1,6 +1,6 @@
 # JIRA Project
 For better and easier development there has been created JIRA project devoted to Trusted Analyticks Platform.  
-You can see there a list of bugs we are working on and those to be done.  
+
 > See https://trustedanalytics.atlassian.net
 
 This is the place where you can do the following:
