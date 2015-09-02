@@ -3,6 +3,12 @@ For better and easier development there has been created JIRA project devoted to
 You can see there a list of bugs we are working on and those to be done.  
 > See https://trustedanalytics.atlassian.net
 
+This is the place where you can do the following:
+* enter defects for platform components
+* list all open & resolved defects for the project
+* see the list of all open change/feature requests
+* create change/feature requests
+
 #Contribution to the project
 If you want to contribute to project to see all defects and features to be done and enter new issues you can simply sign up.  
 To do so follow these steps:  
@@ -29,13 +35,6 @@ To enter new defect follow these steps:
 Congratulations! You just created your new defect in JIRA project and became contributor of Trusted Analytics Platform.
 
 
-There is a JIRA project for Trusted Analytics Platform: https://trustedanalytics.atlassian.net
-
-This is the place where you can do the following:
-* enter defects for platform components
-* list all open & resolved defects for the project
-* see the list of all open change/feature requests
-* create change/feature requests
 
 In the future, JIRA project will also contain plan for the couple nearest releases planned for the platform.
 
