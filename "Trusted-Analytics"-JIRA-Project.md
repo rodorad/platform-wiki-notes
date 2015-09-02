@@ -5,9 +5,15 @@ You can see there a list of bugs we are working on and those to be done.
 
 This is the place where you can do the following:
 * enter defects for platform components
-* list all open & resolved defects for the project
+* see all open & resolved defects for the project
 * see the list of all open change/feature requests
 * create change/feature requests
+
+In the future, JIRA project will also contain information about nearest releases planned for the platform.
+
+You can see the entries as anonymous user (you don't need to register as a legitimate users in project JIRA).
+
+To be able to create items (defects, change requests, etc.) you will need to register as a user in project JIRA.
 
 #Contribution to the project
 If you want to contribute to project to see all defects and features to be done and enter new issues you can simply sign up.  
@@ -34,11 +40,4 @@ To enter new defect follow these steps:
 
 Congratulations! You just created your new defect in JIRA project and became contributor of Trusted Analytics Platform.
 
-
-
-In the future, JIRA project will also contain plan for the couple nearest releases planned for the platform.
-
-You can see the entries as anonymous user (you don't need to register as a legitimate users in project JIRA).
-
-To be able to create items (defects, change requests, etc.) you will need to register as a user in project JIRA.
 
