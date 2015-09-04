@@ -5,7 +5,7 @@ To build Trusted Analytics platform from sources, all you need, is platform-pare
 
 Go to: https://github.com/trustedanalytics/platform-parent and proceed with instructions from the README document.
 
-Once it is done, you will have all of the Java components built and compiled. But among of the cloned repositories, you will some non-Java components as well. To run them with the rest of the platform elements, follow the instructions of the README documents for the following repositories:
+Once it is done, you will have all of the Java components built and compiled. Among the cloned repositories you will have some non-Java components as well. To run them with the rest of the platform elements, follow the instructions of the README documents for the following repositories:
 
 Python:
 - data-catalog - https://github.com/trustedanalytics/data-catalog
