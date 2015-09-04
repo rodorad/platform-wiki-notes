@@ -92,17 +92,23 @@ Update the maximum amount of memory to 30 GB:
     $ uaac member add console.admin admin
 ```
 ## Push apps and services
-You need to have access to a blob store with the projects artifacts because the tool downloads them from it.
+Follow the instructions in [Platform Parent](https://github.com/trustedanalytics/platform-parent) readme.
 
-Clone two repos:
+Next, clone two repos:
 ```bash
 git@github.com:trustedanalytics/cloudfoundry-mkappstack.git
 git@github.com:trustedanalytics/platform-appstack.git
 ```
+
+Next step is filling the data in Cloud Foundry platform definition files, which provide necessary data for deployment process.
+
+Please, follow instructions in [Platform Appstack](https://github.com/trustedanalytics/platform-appstack) 
+
+
 Copy files from platform-appstack to cloudfoundry-mkappstack:
 ```bash
 cp platform-appstack/demo-platform.yml cloudfoundry-mkappstack/appstack.yml
-cp platform-appstack/demo-settings.yml cloudfoundry-mkappstack/settings.yml
+cp platform-appstack/settings.yml cloudfoundry-mkappstack/settings.yml
 ```
 Go to cloudfoundry-mkappstack directory and copy templates
 ```bash
@@ -114,16 +120,11 @@ Enter your environment information to secret.mk. Edit cloudfoundry api endpoint,
 
 Open appstack.mk and change artifact_pfx to the store url. Uncomment proxy and noproxy and put correct proxy values there.
 
-Last file to edit is `settings.yml`. Complete missing values using your environment information.
-
-NOTE:
-Generate HADOOP_PROVIDED_PARAMS using this instruction: `https://github.com/trustedanalytics/hdfs-broker#injection-of-hdfs-client-configuration`.
-
 Now you are ready to deploy whole platform:
 ```bash
 make deploy
 ```
-** Make sure you are on intel network, since it picks apps from intel nexus repository and repository is behind the firewall. appstack.mk (add proper proxy, & no proxy setting)
+
 # Devops remarks
 
 * Set up and assign to AWS user an appropriate account regional policy, i.e. (please remember to change the `ec2:Region` attribute):
