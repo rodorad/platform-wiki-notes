@@ -21,6 +21,7 @@ Once the fuel server is up and running, you are ready to deploy OpenStack to nod
 -	Save BIOS settings.
 -	Now wait until PXE boot ends all work: do not hit any key or power off machine; let the process end automatically. 
 -	Repeat for all nodes.
+
 ## Setting up OpenStack
 Log on to your fuel UI. (If you didn’t change your password, it is admin/admin by default.) You will find there button New OpenStack Environment. 
 -	**Name and release:** Choose a name for your OpenStack instance, choose Juno on Centos release
@@ -70,4 +71,4 @@ You did deployment and manual steps so you’re ready now to test your OpenStack
 Login into fuel UI, click on your cloud deployment, you will find Health Check tab out there. Perform sanity and functional tests. 
 Sanity tests should be all green, the Functional test should be all green besides network connectivity if you’re using proxy. 
 
-If you made all the steps your OpenStack is ready to use. You can find Horizon UI on the top of fuel UI in message box. Happy OpenStack.
+If you made all the steps your OpenStack is ready to use. You can find Horizon UI on the top of fuel UI in message box.
