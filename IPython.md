@@ -3,7 +3,7 @@ Steps below describe the way how to create and access iPython instance on Truste
 
 1. Go to **Tools -> IPython** tab.
 1. You will see a list of iPython instances already created (if there is any).
-![](wikiImages/ipython_dashboard.png)
+[![](wikiImages/ipython_dashboard.png)](wikiImages/ipython_dashboard.png)
 1. To create a new instance write the name of you application and push the button _Create new IPython console_
 1. You will get the message that application has been created, but it may still take up to 1 min till the instance will be actually available. 
 ![](wikiImages/ipython_dashboard_created.png)
