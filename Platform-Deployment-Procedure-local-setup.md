@@ -88,4 +88,7 @@ create your local ~/.gitconfig file with content:
 ```
 [url "https://"]
     insteadOf = git://
+[url “https://github.com/“] 
+    insteadOf = git@github.com:
+
 ```
