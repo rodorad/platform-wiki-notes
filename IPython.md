@@ -9,7 +9,7 @@ Steps below describe the way how to create and access iPython instance on Truste
 ![](wikiImages/ipython_dashboard_created.png)
 1. So, refresh the page after few moments and you should see your iPython instance on the list. Please note, that the name of your application changed a bit. There is a word _**-proxy**_ added at the end of the application name. 
 1. In the same row you can also find a link where your instance of iPython is accesible. 
-![](wikiImages/ipython_list.png)
+![](wikiImages/ipython_dashboard_list.png)
 1. Once you click on the link provided in 6., your browser will take you to the iPython login website.
 ![](wikiImages/ipython_login.png)
 1. To get password for your application, you will need to use a terminal. Log in to appropriate Cloud Foundry api endpoint and choose the right target organization and space (the same, where you created iPython instance). 
