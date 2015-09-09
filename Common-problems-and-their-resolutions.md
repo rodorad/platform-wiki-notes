@@ -25,7 +25,7 @@ Can't list services in `cf service-access` when using the cf cli client:
 
 **Resolution**
 
-This is a bug in cf-cli 6.12.3. Downgrade do 6.12. Users of trustedanalytics/cloudfoundry-mkappstack need to set cfbinver in appstack.mk to 6.12
+This is a bug in cf-cli 6.12.3. Downgrade do 6.12. Users of trustedanalytics/cloudfoundry-mkappstack need to set cfbinver in appstack.mk to 6.12.0
 
 ## End-user problems
 ### Error dialing loggregator
