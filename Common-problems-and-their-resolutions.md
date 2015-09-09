@@ -14,7 +14,7 @@ When listing apps with `cf a`, app instance numbers show up as `?/1`, for exampl
 
 **Resolution**
 
-The resolution can be found [https://docs.cloudfoundry.org/running/troubleshooting.html](here), under the `Recovering from HM9000 Failure` section. You can additionaly stop all hm9000 processes beforehand and start them in the following order: `etcd1 -> hm1 -> etcd2 -> hm2`.
+The resolution can be found [here](https://docs.cloudfoundry.org/running/troubleshooting.html), under the `Recovering from HM9000 Failure` section. You can additionaly stop all hm9000 processes beforehand and start them in the following order: `etcd1 -> hm1 -> etcd2 -> hm2`.
 
 ### Error parsing JSON
 **Problem**
