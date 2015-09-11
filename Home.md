@@ -2,7 +2,7 @@
 
 * [Overview of Trusted Analytics Platform](Overview)
 * [Getting Started Guide](Getting Started Guide)
-* [https://trustedanalytics.atlassian.net/](Trusted Analytics JIRA Project)
+* [Trusted Analytics JIRA Project](https://trustedanalytics.atlassian.net/)
 * Paas Architecture
   - [[System Access Overview]]
   - [[Application Platform]]
