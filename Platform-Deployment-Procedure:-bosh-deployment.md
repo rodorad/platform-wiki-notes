@@ -107,7 +107,7 @@ Please, follow instructions in [Platform Appstack](https://github.com/trustedana
 
 Copy files from platform-appstack to cloudfoundry-mkappstack:
 ```bash
-cp platform-appstack/demo-platform.yml cloudfoundry-mkappstack/appstack.yml
+cp platform-appstack/appstack.yml cloudfoundry-mkappstack/appstack.yml
 cp platform-appstack/settings.yml cloudfoundry-mkappstack/settings.yml
 ```
 Go to cloudfoundry-mkappstack directory and copy templates
