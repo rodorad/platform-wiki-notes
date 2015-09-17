@@ -20,7 +20,7 @@ wget https://s3-us-west-1.amazonaws.com/openstack-images-dp2/trusty-server-cloud
   ``` 
 id_6e6058c8-4669-4b57-b787-9c19adecc3d2 
   ```
-9. Copy the ID to a file with the project ID and copy the name of the network. 
+9. Copy the ID without "id_" prefix (ie: 6e6058c8-4669-4b57-b787-9c19adecc3d2) to a file with the project ID and copy the name of the network. 
 9. The last thing you need is the IP address of the identity API. You can find it in _Project > Compute > Access & security > API access_. Copy the IP address to a file with the project ID. The IP address will look like this:
 
   ``` 
