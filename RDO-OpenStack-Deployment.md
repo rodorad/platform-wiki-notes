@@ -36,7 +36,16 @@ $ yum -y install qemu-kvm qemu-img virt-manager libvirt libvirt-python python-vi
 * on RDO quickstart page https://www.rdoproject.org/Quickstart there is a suggestion to use packstack in all-in-one mode but from our experience it is better to use it to generate answer file first, then edit it and run installation based on the modified file.
 $ sudo packstack --gen-answer-file packstack-answers.txt
 * values to modify
-CONFIG_SWIFT_INSTALL=n, CONFIG_CEILOMETER_INSTALL=n, CONFIG_HEAT_INSTALL=n, CONFIG_NAGIOS_INSTALL=n, CONFIG_NOVA_COMPUTE_HOSTS= -> ip addresses for all nova compute nodes should be added here, CONFIG_NEUTRON_OVS_TENANT_NETWORK_TYPE=gre, CONFIG_NEUTRON_OVS_TUNNEL_RANGES=1000:3000, CONFIG_NEUTRON_OVS_TUNNEL_IF= -> interface name for private network interface, CONFIG_PROVISION_DEMO=n -> we do not need any demo tenants created, CONFIG_CINDER_VOLUMES_CREATE=n -> it is better to use previously created volume group on storage node
+ * CONFIG_SWIFT_INSTALL=n
+ * CONFIG_CEILOMETER_INSTALL=n
+ * CONFIG_HEAT_INSTALL=n
+ * CONFIG_NAGIOS_INSTALL=n
+ * CONFIG_NOVA_COMPUTE_HOSTS= -> ip addresses for all nova compute nodes should be added here
+ * CONFIG_NEUTRON_OVS_TENANT_NETWORK_TYPE=gre
+ * CONFIG_NEUTRON_OVS_TUNNEL_RANGES=1000:3000
+ * CONFIG_NEUTRON_OVS_TUNNEL_IF= -> interface name for private network interface
+ * CONFIG_PROVISION_DEMO=n -> we do not need any demo tenants created
+ * CONFIG_CINDER_VOLUMES_CREATE=n -> it is better to use previously created volume group on storage node
 
 $ sudo packstack --answer-file=modified_packstack-answers.txt
 * after successful installation an authorization file will be created by default in ~/root/keystone_admin, it should be sourced before commandline usage of any openstack shell command.
