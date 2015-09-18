@@ -1,6 +1,38 @@
 
 # Prerequisites
-## OpenStack configuration steps for new deployment
+
+* Kilo (2015.1.0 or 2015.1.1) or Juno (2014.2.3) OpenStack 
+* Tenant with at least: 128 vCPU, 256GB RAM, 2TB for Root Disks and 2TB for Volumes
+* Networking (neutron) configured with dedicated static IPs (without DHCP)
+* At least 4 floating IPs available
+* 1 domain (internal OK)
+* Ability to access the following domains (through proxy OK)
+
+```
+*.amazonaws.com
+*.bintray.com
+*.cloudera.com
+*.github.com
+*.githubusercontent.com
+*.oracle.com
+*.ubuntu.com
+*.zabbix.com
+*.gotapaas.eu
+*.bosh.io
+*.docker.io
+*.rvm.io
+*.cloudfront.net
+*.fastly.net
+*.gnupg.net
+*.centos.org
+*.fedoraproject.org
+*.python.org
+*.rubygems.org
+*.travis-ci.org
+*.rubini.us
+```
+
+## Configuration steps for new deployment
 1. OpenStack is up and running, with Ubuntu/Centos images uploaded. 
 
   ``` 
