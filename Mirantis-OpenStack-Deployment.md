@@ -5,6 +5,8 @@
 -	**6x compute node (each):** Dual-socket CPU with at least 4 physical cores per socket, 64 GB RAM, 256 SSD , 2 NICs (either 1 Gbps or 10 Gbps).
 -	Screen, keyboard.
 
+For GRE setups, where VLANs are unavailable, 4 NICs per machine are needed.
+
 # Initial setup
 -	Download the latest version of Mirantis distribution from Mirantis website and make a bootable image on a USB drive using Xfburn for Linux* or ImgBurn for Windows*.
 -	Be sure that your network is configured properly: 4 broadcast address, 4 gateways.
