@@ -7,6 +7,7 @@
     * Mirantis Juno release ships with Openstack 2014.2.1 - this is supported, but requires [workarounds](https://github.com/trustedanalytics/platform-wiki/wiki/Mirantis-OpenStack-Deployment#manual-steps)
 * Tenant with at least: 128vCPU, 256GB RAM, 2TB for Root, 2TB for Volumes
 * Networking (neutron) configured with dedicated 4 floating IPs (not limited to random DHCP)
+    * 4 NICs per machine are needed with GRE networking
 * 1 domain (internal OK)
 * Ability to access the following domains (proxy OK)
 
