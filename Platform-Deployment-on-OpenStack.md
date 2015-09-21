@@ -1,7 +1,7 @@
 
 # Prerequisites
 
-* Kilo (2015.1.0 or 2015.1.1) or Juno (2014.2.1) OpenStack 
+* Kilo (2015.1.0 or 2015.1.1) or Juno (2014.2.3) OpenStack 
 * Tenant with at least: 128vCPU, 256GB RAM, 2TB for Root, 2TB for Volumes
 * Networking (neutron) configured with dedicated static IPs (without DHCP)
 * At least 4 floating IPs available
