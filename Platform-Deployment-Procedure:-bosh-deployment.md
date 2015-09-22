@@ -90,6 +90,8 @@ Update the maximum amount of memory to 30 GB:
       --autoapprove true --access_token_validity 1209600 --refresh_token_validity 1209600
     $ uaac group add console.admin
     $ uaac member add console.admin admin
+    $ uaac client update cf \
+      --scope cloud_controller.admin,cloud_controller.read,cloud_controller.write,doppler.firehose,openid,password.write,scim.read,scim.write,console.admin
 ```
 ## Push apps and services
 Follow the instructions in [Platform Parent](https://github.com/trustedanalytics/platform-parent) readme.
