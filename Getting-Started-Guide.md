@@ -19,13 +19,6 @@ This is a user journey and guide for Getting Started with Trusted Analytics Plat
 * [Pulling data into app from hdfs](https://github.com/trustedanalytics/dataset-reader-sample)
 
 ## [Working with data in the toolkit](Intel®-Analytics-Toolkit-for-Apache-Hadoop*-Software-as-a-Service)
+* For a full description of the analytics API look at the [TAP ATK API Documentation](http://trustedanalytics.github.io/atk/)
 * [Creating a toolkit server instance](Intel%C2%AE-Analytics-Toolkit-for-Apache-Hadoop*-Software#creating-a-toolkit-server-instance)
 * [Installing the toolkit client for TAP](Intel%C2%AE-Analytics-Toolkit-for-Apache-Hadoop*-Software#download-the-toolkit-client-on-the-platform)
-* [Connecting to TAP from toolkit client](http://trustedanalytics.github.io/atk/python_api/connect.html?highlight=basic%20connecting)
-* Locating data in TAP hdfs
-* [Ingesting data using the toolkit API](http://trustedanalytics.github.io/atk/python_api/datasources/index.html)
-* [Data manipulation using the toolkit API](http://trustedanalytics.github.io/atk/python_api/frames/index.html)
-* [Graph ML algorithms on the toolkit API](http://trustedanalytics.github.io/atk/python_api/models/index.html)
-* [Batch mode](http://trustedanalytics.github.io/atk/ds_dflw.html)
-* [Saving your output as CSV or in Hive table](http://trustedanalytics.github.io/atk/python_api/datasources/index.html)
-* [Saving data back to HDFS](http://trustedanalytics.github.io/atk/python_api/datasources/index.html)
