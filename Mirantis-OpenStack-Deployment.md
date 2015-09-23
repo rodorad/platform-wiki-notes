@@ -63,7 +63,9 @@ https://github.com/trustedanalytics/platform-wiki/wiki/OpenStack-Juno-Static-IP-
 ### Cinder volumes
 Login on storage node. IP can be found in fuel UI. 
 Use ``` vi /etc/cinder/cinder.conf ```
-Find line ``` lvm_type ``` line and change it to thin
+Find line ``` lvm_type ``` line and change it to ``` thin ```
+Uncomment ``` volume_clear ``` and set to ``` none ```.
+
 Use command: ``` /etc/init.d/openstack-cinder-* restart ``` where * is name of all services.
 ### Mysql max_connections fix for volumes
 Login at controller node. Use command
