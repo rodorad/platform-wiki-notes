@@ -79,7 +79,7 @@ Update the maximum amount of memory to 30 GB:
     $ uaac token client get admin -s <uaac_admin_client_secret>
     $ uaac client add atk-client \
       --scope cloud_controller.read,cloud_controller.write,cloud_controller_service_permissions.read,openid \
-      --authorized_grant_types authorization_code,password,refresh_token \
+      --authorized_grant_types authorization_code,password,refresh_token,client_credentials  \
       --redirect_uri http://atkdash.<domain>/managed/auth/cloudfoundry/callback \
       --authorities uaa.none -s <uaac_admin_client_secret>
     $ uaac client update developer_console \
