@@ -8,6 +8,7 @@
 * Tenant with at least: 128vCPU, 256GB RAM, 2TB for Root, 2TB for Volumes
 * Networking (neutron) configured with dedicated 4 floating IPs (not limited to random DHCP)
     * 4 NICs per machine are needed with GRE networking
+* Due to extensive testing GRE networking is highly recommended
 * 1 domain (internal OK)
 * Ability to access the following domains (proxy OK)
 
