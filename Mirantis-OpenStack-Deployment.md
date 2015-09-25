@@ -1,11 +1,11 @@
 # Hardware setup
--	**1x Controller node:** 2 CPUs with 6 cores, 24 GB of RAM, 1 TB RAID1, 2 NICs (either 1 Gbps or 10 Gbps).
+-	**1x Controller node:** 2 CPUs with 6 cores, 24 GB of RAM, 1 TB RAID1, 4 NICs (either 1 Gbps or 10 Gbps).
 -	**1x Storage node:** 1 CPU with 4 physical cores, 12 GB of RAM, 3 TB of ceph storage, 500 GB RAID1, 2 NICs (either 1 Gbps or 10 Gbps).
 -	**1x fuel server:** Quad-core CPU, 4 GB RAM, 1 Gbps Ethernet, 128 GB SAS Disk, IPMI access through independent management network.
--	**6x compute node (each):** Dual-socket CPU with at least 4 physical cores per socket, 64 GB RAM, 256 SSD , 2 NICs (either 1 Gbps or 10 Gbps).
+-	**6x compute node (each):** Dual-socket CPU with at least 4 physical cores per socket, 64 GB RAM, 256 SSD , 4 NICs (either 1 Gbps or 10 Gbps).
 -	Screen, keyboard.
 
-For GRE setups, where VLANs are unavailable, 4 NICs per machine are needed.
+For GRE setups 4 NICs per machine are required.
 
 # Initial setup
 -	Download the latest version of Mirantis distribution from Mirantis website and make a bootable image on a USB drive using Xfburn for Linux* or ImgBurn for Windows*.
