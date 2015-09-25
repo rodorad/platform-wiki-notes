@@ -29,7 +29,7 @@ Log on to your fuel UI. (If you didn’t change your password, it is admin/admin
 -	**Name and release:** Choose a name for your OpenStack instance, choose Juno on Centos release
 -	Choose deployment mode: HA or w/o HA
 -	**In compute:** Choose KVM
--	**In networking:** Neutron with GRE, however you can use VLAN segmentation if you have it prepared correctly
+-	**In networking:** Neutron with GRE
 -	**Storage backends:** Leave it default
 -	Skip to finish (don’t choose any other options)
 Now, you are ready to add nodes to your OpenStack configuration. 
