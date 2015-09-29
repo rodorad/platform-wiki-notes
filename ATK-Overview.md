@@ -26,6 +26,8 @@
     - Query. 
     - Machine learning.
 
+For the full API documentation, [read the ATK User Documentation](http://trustedanalytics.github.io/atk/).
+
 ## Client installation configuration and usage
 
 ### Creating a toolkit server instance
