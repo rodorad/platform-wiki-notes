@@ -10,7 +10,7 @@ This procedure shows you how to create a new organization and new spaces for it.
 
 9. Click the _Submit_ button.
 
-![](https://github.com/intel-data/platform-wiki/blob/963aaac53281783f4adda9ec98601ce51785be5b/wikiImages/TAP_create_new_organization.png)
+![](https://github.com/trustedanalytics/platform-wiki/blob/963aaac53281783f4adda9ec98601ce51785be5b/wikiImages/TAP_create_new_organization.png)
 
 # Add new space 
 
@@ -24,4 +24,4 @@ This procedure shows you how to add a new space within an existing organization.
 
 9. Click the _Add Space_ button.
 
-![](https://github.com/intel-data/platform-wiki/blob/963aaac53281783f4adda9ec98601ce51785be5b/wikiImages/TAP_create_new_space.png)
+![](https://github.com/trustedanalytics/platform-wiki/blob/963aaac53281783f4adda9ec98601ce51785be5b/wikiImages/TAP_create_new_space.png)
