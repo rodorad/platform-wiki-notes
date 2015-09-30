@@ -44,10 +44,10 @@ Continuing with the "Spring Music" app example above, you can easily create and 
 
 Go to Console >> Marketplace and browse to the "MongoDB" service. Click on it and in the service's profile, add a new instance with name "myMongo". Once available, the instance will list below showing you which space it is available in.
 
-![](https://github.com/intel-data/platform-wiki/blob/master/wikiImages/TAP_console_marketplace.png)
+![](https://github.com/trustedanalytics/platform-wiki/blob/master/wikiImages/TAP_console_marketplace.png)
 
-![](https://github.com/intel-data/platform-wiki/blob/master/wikiImages/TAP_console_add_mongodb_instance.png)
+![](https://github.com/trustedanalytics/platform-wiki/blob/master/wikiImages/TAP_console_add_mongodb_instance.png)
 
 Going back to Console >> Applications, view your "spring-music" profile by clicking its "See details" link. Click on the "Bindings" tab. You should see the "myMongo" instance listed in the "Available service instances" to the right. Click "Bind". You will now be promoted to click "Restage" so the app will be restaged now bound to the MongoDB instance you created. Once restaged, all data entered will be stored in the MongoDB instance, thus creating a persistent data store for the app.
 
-![](https://github.com/intel-data/platform-wiki/blob/master/wikiImages/TAP_console_bind_service.png)
+![](https://github.com/trustedanalytics/platform-wiki/blob/master/wikiImages/TAP_console_bind_service.png)
