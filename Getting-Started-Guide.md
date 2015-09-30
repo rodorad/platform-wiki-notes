@@ -18,7 +18,7 @@ This is a user journey and guide for Getting Started with Trusted Analytics Plat
 * [Ingesting data through TAP and Kafka](https://github.com/trustedanalytics/ingestion-ws-kafka-hdfs)
 * [Pulling data into app from hdfs](https://github.com/trustedanalytics/dataset-reader-sample)
 
-## [Working with data in the toolkit](ATK-Overwiev)
+## [Working with data in the toolkit](ATK-Overview)
 * For a full description of the analytics API look at the [TAP ATK API Documentation](http://trustedanalytics.github.io/atk/)
 * [Creating a toolkit server instance](ATK-Overview#creating-a-toolkit-server-instance)
 * [Installing the toolkit client for TAP](ATK-Overview#download-the-toolkit-client-on-the-platform)
