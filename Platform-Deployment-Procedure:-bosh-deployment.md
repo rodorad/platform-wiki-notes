@@ -75,17 +75,17 @@ Update the maximum amount of memory to 30 GB:
 
 #### Add UAA clients
 ```bash
-    $ uaac target https://uaa.<domain>/ --skip-ssl-validation
+    $ uaac target https://uaa.<cf_api_id>.xip.io/ --skip-ssl-validation
     $ uaac token client get admin -s <uaac_admin_client_secret>
     $ uaac client add atk-client \
       --scope cloud_controller.read,cloud_controller.write,cloud_controller_service_permissions.read,openid \
       --authorized_grant_types authorization_code,password,refresh_token,client_credentials  \
-      --redirect_uri http://atkdash.<domain>/managed/auth/cloudfoundry/callback \
+      --redirect_uri http://atkdash.<cf_api_id>.xip.io/managed/auth/cloudfoundry/callback \
       --authorities uaa.none -s <uaac_admin_client_secret>
     $ uaac client update developer_console \
       --scope cloud_controller.admin,cloud_controller.read,cloud_controller.write,console.admin,doppler.firehose,openid,password.write,scim.read,scim.userids,scim.write \
       --authorized_grant_types authorization_code,client_credentials,refresh_token \
-      --redirect_uri http://console.<domain>/oauth/callback,https://console.<domain>/oauth/callback \
+      --redirect_uri http://console.<cf_api_id>.xip.io/oauth/callback,https://console.<cf_api_id>.xip.io/oauth/callback \
       --authorities scim.read,uaa.admin,cloud_controller.admin,billing.admin,uaa.resource,password.write,scim.write,cloud_controller.write,cloud_controller.read \
       --autoapprove true --access_token_validity 1209600 --refresh_token_validity 1209600
     $ uaac group add console.admin
