@@ -32,7 +32,7 @@ $ cf push your_app
 
 With the app successfully pushed, you can now view it on your instance of TAP. Go the TAP Console >> Applications to view the app's instance. Clicking the URL will load the app. Clicking "See details" will reveal the profile of the app with controls to start|stop|restage it.
 
-![](https://github.com/intel-data/platform-wiki/blob/master/wikiImages/TAP_console_spring_music_app_instance.png)
+![](https://github.com/trustedanalytics/platform-wiki/blob/master/wikiImages/TAP_console_spring_music_app_instance.png)
 
 If you are new to deploying apps on the Trusted Analytics platform (TAP) or an instance of Cloud Foundry, these steps will guide you through the process.
 
