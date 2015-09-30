@@ -60,7 +60,7 @@ and execute:
 ### Set up Cloud Foundry
 Login to Cloud Foundry using admin account and create organization and space
 ```bash
-    $ cf login -a http://api.<cf_api_id>.xip.io/ -u admin -p <cf_admin_pass>
+    $ cf login -a http://api.<cf_api_id>.xip.io/ -u admin -p <cf_admin_pass> --skip-ssl-validation
     $ cf create-org <org_name>
     $ cf target -o <org_name>
     $ cf create-space <space_name>
