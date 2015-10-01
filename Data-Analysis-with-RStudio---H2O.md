@@ -61,5 +61,7 @@ irisFrame <- h2o.importFolder(<here you need to paste "targetUri" acquired in 1.
 
 1. Generate scoring engine as a java code:
 
-```h2o.download_pojo(irisModel)```
+```
+h2o.download_pojo(irisModel)
+```
 
