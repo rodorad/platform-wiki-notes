@@ -15,23 +15,18 @@ Getting access to RStudio on TAP:
 Installing H2O client in RStudio:
 
 1. Find H2O url, username and password. It is on the "DP2 Environments" page on secure wiki.
-2. Go to H2O Webpage and authenticate with user&password.
-3. Find in top-menu buttons "Help" and then "About". You should see such popup:
+1. Go to H2O Webpage and authenticate with user&password.
+1. Find in top-menu buttons "Help" and then "About". You should see such popup:
 <TODO image>
-4. We need to find out "H2O Build project version". It is important to install client in version similar to the version of server.
+1. We need to find out "H2O Build project version". It is important to install client in version similar to the version of server.
 **When you see version 3.0.1.99999 it means that you are connecting to a server spawned from our modified version of H2O. Actually is a version 3.0.1.7 with Basic Authentication implemented by our team.**
-5. You need to find H2O documentation in the right version. For instance here you can find documentation for 3.0.1.7 version: http://h2o-release.s3.amazonaws.com/h2o/rel-simons/7/index.html
-6. Go to "INSTALL IN R" card, and copy all lines up to "library(h2o)"
-7. Go back to RStudio page.
-8. Run installation script:
-
-1. a
-1. b
-1. c
-
-8.1. Create new file: go to "File", then "New File" and then "R Script"
-8.2. Paste the content of your clipboard.
-8.3. Run script by highlighting whole file and clicking "Run"
+1. You need to find H2O documentation in the right version. For instance here you can find documentation for 3.0.1.7 version: http://h2o-release.s3.amazonaws.com/h2o/rel-simons/7/index.html
+1. Go to "INSTALL IN R" card, and copy all lines up to "library(h2o)"
+1. Go back to RStudio page.
+1. Run installation script:
+1.1. Create new file: go to "File", then "New File" and then "R Script"
+1.1. Paste the content of your clipboard.
+1.1. Run script by highlighting whole file and clicking "Run"
 <image>
 
 Run sample analysis:
