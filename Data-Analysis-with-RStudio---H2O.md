@@ -25,6 +25,10 @@ Installing H2O client in RStudio:
 7. Go back to RStudio page.
 8. Run installation script:
 
+1. a
+1. b
+1. c
+
 8.1. Create new file: go to "File", then "New File" and then "R Script"
 8.2. Paste the content of your clipboard.
 8.3. Run script by highlighting whole file and clicking "Run"
