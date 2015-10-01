@@ -58,3 +58,7 @@
 * [[Pricing Matrix for AWS Deployments]]
 * [[Pricing Matrix for OpenStack Deployments]]
 * [[ATK Overview]]
+
+**Release Notes**
+
+* [[September 29, 2015]]
