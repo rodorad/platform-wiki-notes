@@ -41,8 +41,7 @@ Run sample analysis:
   1. On details page find "targetUri" field and copy its value to the clipboard.
 1. Connect to H2P instance. 
   1. You will need "internal address", "username" and "password". You can find this information on the "DP2 Environments" page on secure wiki.
-  1. Connect to H2O by executing such line (remember to change ip address, username and password to these acquired in the previous point):
-```
+  1. Connect to H2O by executing such line (remember to change ip address, username and password to these acquired in the previous point):```
     tapH2O = h2o.init("10.10.4.80",  strict_version_check = FALSE, username = "username", password = "p4$sw0rD")
 ```
 1. Import folder from a hdfs by executing such line:
