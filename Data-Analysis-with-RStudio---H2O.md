@@ -13,6 +13,7 @@ Getting access to RStudio on TAP:
 <TODO image>
 
 Installing H2O client in RStudio:
+
 1. Find H2O url, username and password. It is on the "DP2 Environments" page on secure wiki.
 2. Go to H2O Webpage and authenticate with user&password.
 3. Find in top-menu buttons "Help" and then "About". You should see such popup:
@@ -29,6 +30,7 @@ Installing H2O client in RStudio:
 <image>
 
 Run sample analysis:
+
 1. Upload data set to TAP.
 1.1. Go to TAP console Webpage.
 1.2. Click "Data Catalog" in the left-side menu.
