@@ -15,8 +15,7 @@ In this tutorial you will learn how to use RStudio and H2O on TAP to perform sim
 ### Installing H2O client in RStudio:
 
 1. Find H2O url, internal address, username and password. To do that, contact with platform operator.
-
-_It is a temporary step. We are working on a feature which will enable you to spawn h2o instance on demand, just like it is done for RStudio._
+  _It is a temporary step. We are working on a feature which will enable you to spawn h2o instance on demand, just like it is done for RStudio._
 1. Go to H2O Webpage and authenticate with user&password.
 1. Find in top-menu buttons "Help" and then "About". You should see such popup:
 ![image](https://raw.githubusercontent.com/trustedanalytics/platform-wiki/master/wikiImages/RStudioAndH2o/04h2oAbout.PNG)
