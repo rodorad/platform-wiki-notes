@@ -57,12 +57,8 @@ irisFrame <- h2o.importFolder(<here you need to paste "targetUri" acquired in 1.
 
 1. Score the same dataset used for training:
 
-```
-h2o.predict(irisModel, irisFrame)
-```
+```h2o.predict(irisModel, irisFrame)```
 
 1. Generate scoring engine as a java code:
 
-```
-h2o.download_pojo(irisModel)
-```
+```h2o.download_pojo(irisModel)```
