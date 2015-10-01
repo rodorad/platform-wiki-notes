@@ -61,8 +61,8 @@ irisModel <- h2o.gbm(x=1:4, y=5, training_frame = irisFrame)
 h2o.predict(irisModel, irisFrame)
 ```
 
-6\. Generate scoring engine as a java code:
-```
-h2o.download_pojo(irisModel)
-```
+  6\. Generate scoring engine as a java code:
+  ```
+  h2o.download_pojo(irisModel)
+  ```
 
