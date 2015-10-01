@@ -53,11 +53,11 @@ Run sample analysis:
 ```
     irisModel <- h2o.gbm(x=1:4, y=5, training_frame = irisFrame)
 ```
-1. Score the same dataset used for training:
+5. Score the same dataset used for training:
 ```
     h2o.predict(irisModel, irisFrame)
 ```
-1. Generate scoring engine as a java code:
+6. Generate scoring engine as a java code:
 ```
     h2o.download_pojo(irisModel)
 ```
