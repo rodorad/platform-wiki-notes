@@ -42,13 +42,21 @@ Run sample analysis:
 1. Connect to H2P instance. 
   1. You will need "internal address", "username" and "password". You can find this information on the "DP2 Environments" page on secure wiki.
   1. Connect to H2O by executing such line (remember to change ip address, username and password to these acquired in the previous point):
-tapH2O = h2o.init("10.10.4.80",  strict_version_check = FALSE, username = "username", password = "p4$sw0rD")
+```
+    tapH2O = h2o.init("10.10.4.80",  strict_version_check = FALSE, username = "username", password = "p4$sw0rD")
+```
 1. Import folder from a hdfs by executing such line:
-irisFrame <- h2o.importFolder(<here you need to paste "targetUri" acquired in 1.7. step>)
+```
+    irisFrame <- h2o.importFolder(<here you need to paste "targetUri" acquired in 1.7. step>)
+```
 1. Train a classification tree:
-irisModel <- h2o.gbm(x=1:4, y=5, training_frame = irisFrame)
+```
+    irisModel <- h2o.gbm(x=1:4, y=5, training_frame = irisFrame)
+```
 1. Score the same dataset used for training:
-h2o.predict(irisModel, irisFrame)
+```
+    h2o.predict(irisModel, irisFrame)
+```
 1. Generate scoring engine as a java code:
 ```
     h2o.download_pojo(irisModel)
