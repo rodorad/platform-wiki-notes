@@ -1,6 +1,6 @@
 In this tutorial you will learn how to use RStudio and H2O on TAP to perform simple data analysis. In few steps you will get access to RStudio and H2O. Then you will upload sample data set to TAP platform and generate scoring engine using RStudio and H2O.
 
-Getting access to RStudio on TAP:
+## Getting access to RStudio on TAP:
 
 1. Go to TAP console Webpage.
 1. Click "Data Science" and then "RStudio" in the left-side menu.
