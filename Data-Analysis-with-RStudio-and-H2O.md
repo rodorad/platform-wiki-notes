@@ -30,7 +30,7 @@ In this tutorial you will learn how to use RStudio and H2O on TAP to perform sim
   1. Run script by highlighting whole file and clicking "Run"
 ![image](https://raw.githubusercontent.com/trustedanalytics/platform-wiki/master/wikiImages/RStudioAndH2o/05h2oClientInstallation.PNG)
 
-### Run sample analysis:
+### Running sample analysis:
 
 1. Upload data set to TAP.
   1. Go to TAP console Webpage.
