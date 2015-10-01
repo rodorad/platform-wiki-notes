@@ -6,7 +6,7 @@ In this tutorial you will learn how to use RStudio and H2O on TAP to perform sim
 1. Click "Data Science" and then "RStudio" in the left-side menu.
 1. Create new RStudio instance by typing a name and clicking "Create new rstudio instance". Your instance should be ready within few seconds.
 1. Refresh the Webpage. Credential to your RStudio should be visible in the list.
-<TODO image>
+![image](https://raw.githubusercontent.com/trustedanalytics/platform-wiki/master/wikiImages/TAP-platform-phpmyadmin.png)
 1. Open "App Url" in a new card/window and try to authenticate with credentials given in the TAP console Webpage.
 <TODO image>
 1. After this step you should see something like this:
