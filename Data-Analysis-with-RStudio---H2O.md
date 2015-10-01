@@ -45,17 +45,19 @@ Run sample analysis:
   ```
       tapH2O = h2o.init("10.10.4.80",  strict_version_check = FALSE, username = "username", password = "p4$sw0rD")
   ```
-1. Import folder from a hdfs by executing such line:
-```irisFrame <- h2o.importFolder(<here you need to paste "targetUri" acquired in 1.7. step>)```
-1. Train a classification tree:
-  ```
+3. Import folder from a hdfs by executing such line:
+```
+irisFrame <- h2o.importFolder(<here you need to paste "targetUri" acquired in 1.7. step>)
+```
+4. Train a classification tree:
+```
     irisModel <- h2o.gbm(x=1:4, y=5, training_frame = irisFrame)
-  ```
-1. Score the same dataset used for training:
+```
+5. Score the same dataset used for training:
 ```
     h2o.predict(irisModel, irisFrame)
 ```
-1. Generate scoring engine as a java code:
+6. Generate scoring engine as a java code:
 ```
     h2o.download_pojo(irisModel)
 ```
