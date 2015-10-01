@@ -2,6 +2,7 @@ In this tutorial you will learn how to use RStudio and H2O on TAP to perform sim
 
 Getting access to RStudio on TAP:
 1. Go to TAP console Webpage.
+
 2. Click "Data Science" and then "RStudio" in the left-side menu.
 3. Create new RStudio instance by typing a name and clicking "Create new rstudio instance". Your instance should be ready within few seconds.
 4. Refresh the Webpage. Credential to your RStudio should be visible in the list.
