@@ -14,7 +14,7 @@ In this tutorial you will learn how to use RStudio and H2O on TAP to perform sim
 
 ### Installing H2O client in RStudio:
 
-1. Find H2O url, username and password. It is on the "DP2 Environments" page on secure wiki.
+1. Find H2O url, internal address, username and password. To do that, contact with platform operator.
 1. Go to H2O Webpage and authenticate with user&password.
 1. Find in top-menu buttons "Help" and then "About". You should see such popup:
 ![image](https://raw.githubusercontent.com/trustedanalytics/platform-wiki/master/wikiImages/RStudioAndH2o/04h2oAbout.PNG)
@@ -40,8 +40,8 @@ In this tutorial you will learn how to use RStudio and H2O on TAP to perform sim
   1. Find your data set (by "Title" specified in 1.4. step ) and click on its name to see details.
   1. On details page find "targetUri" field and copy its value to the clipboard.
 ![image](https://raw.githubusercontent.com/trustedanalytics/platform-wiki/master/wikiImages/RStudioAndH2o/06h2oDataset.PNG)
-2. Connect to H2P instance. 
-  1. You will need "internal address", "username" and "password". You can find this information on the "DP2 Environments" page on secure wiki.
+2. Connect to H2O instance. 
+  1. You will need "internal address", "username" and "password". You should already have them, acquired in 1. step of "Installing H2O client in RStudio" section.
   1. Connect to H2O by executing such line (remember to change ip address, username and password to these acquired in the previous point):
   ```
   tapH2O = h2o.init("10.10.4.80",  strict_version_check = FALSE, username = "username", password = "p4$sw0rD")
@@ -66,4 +66,6 @@ h2o.predict(irisModel, irisFrame)
 ```
 h2o.download_pojo(irisModel)
 ```
+
+7\. You can use it in your java application. Soon, you will be able to publish it as a service in TAP platform, stay tuned!
 
