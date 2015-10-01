@@ -47,7 +47,8 @@ Run sample analysis:
   ```
 3. Import folder from a hdfs by executing such line:
 
-```irisFrame <- h2o.importFolder(<here you need to paste "targetUri" acquired in 1.7. step>)```
+```
+irisFrame <- h2o.importFolder(<here you need to paste "targetUri" acquired in 1.7. step>)```
 
 4. Train a classification tree:
 ```
