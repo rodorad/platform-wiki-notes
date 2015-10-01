@@ -17,6 +17,7 @@ This is a user journey and guide for Getting Started with Trusted Analytics Plat
 * [Work with data sets](Data-Acquisition)
 * [Ingesting data through TAP and Kafka](https://github.com/trustedanalytics/ingestion-ws-kafka-hdfs)
 * [Pulling data into app from hdfs](https://github.com/trustedanalytics/dataset-reader-sample)
+* [Data Analysis with RStudio and H2O](Data-Analysis-with-RStudio-and-H2O)
 
 ## [Working with data in the toolkit](ATK-Overview)
 * For a full description of the analytics API look at the [TAP ATK API Documentation](http://trustedanalytics.github.io/atk/)
