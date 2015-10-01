@@ -51,15 +51,19 @@ Run sample analysis:
 irisFrame <- h2o.importFolder(<here you need to paste "targetUri" acquired in 1.7. step>)
 ```
 
-1. Train a classification tree:
+4. Train a classification tree:
 
-```irisModel <- h2o.gbm(x=1:4, y=5, training_frame = irisFrame)```
+```
+irisModel <- h2o.gbm(x=1:4, y=5, training_frame = irisFrame)
+```
 
-1. Score the same dataset used for training:
+5. Score the same dataset used for training:
 
-```h2o.predict(irisModel, irisFrame)```
+```
+h2o.predict(irisModel, irisFrame)
+```
 
-1. Generate scoring engine as a java code:
+6. Generate scoring engine as a java code:
 
 ```
 h2o.download_pojo(irisModel)
