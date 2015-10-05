@@ -50,4 +50,4 @@
    - [[Pricing Matrix for OpenStack Deployments]]
    - [[ATK Overview]]
 * Release Notes
-   - [[September 29, 2015]]
+   - [[2015 09 Release Notes]]
