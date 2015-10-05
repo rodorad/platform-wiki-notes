@@ -1,5 +1,7 @@
 ## Wiki for Trusted Analytics Platform  
 
+> See [TAP JIRA](https://trustedanalytics.atlassian.net) to report issue or submit a feature request.
+
 * [Overview of Trusted Analytics Platform](Overview)
 * [Getting Started Guide](Getting Started Guide)
 * [Trusted Analytics JIRA Project](https://trustedanalytics.atlassian.net/)
