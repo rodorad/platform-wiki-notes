@@ -31,4 +31,14 @@ cf set-env app-name JAVA_OPTS "-verbose:gc -XX:+PrintGCDetails"
 
 cf restage app-name
 
+### Specifying heap and metaspace size for CF application
 
+Use the newest version of java buildpack (support for specifying heap size was added in 3.2):
+```
+cf push <APP-NAME> -p <ARTIFACT> -b https://github.com/cloudfoundry/java-buildpack.git
+```
+Set environment variables:
+```
+cf set-env <APP-NAME> JBP_CONFIG_OPEN_JDK_JRE: [memory_calculator: {memory_sizes: { heap: 64M, metaspace: 34M }}]
+```
+Restage application.
