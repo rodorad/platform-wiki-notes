@@ -1,3 +1,5 @@
+## Please note that we don't use iPython Broker anymore. It was designed to deploy a proxy application to access Docker image of IPython. Now, we use service-exposer to access IPython.
+
 ## Get the sources from github
 
 ```
