@@ -12,7 +12,9 @@
 
 ![](https://github.com/trustedanalytics/platform-wiki/blob/master/wikiImages/TAP-platform-processing.png)
 
+# Architecture overview
 
+![](https://github.com/trustedanalytics/platform-wiki/blob/master/wikiImages/TAP-architecture-overview.png)
  
 # Physical components 
  
