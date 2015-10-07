@@ -52,11 +52,11 @@ vi /usr/lib/python2.6/site-packages/nova/network/neutronv2/api.py
 
 Replace the following line:
 ```bash
-port_req_body['port']['fixied_ips'] = [{'ip_address': fixed_ip}]
+port_req_body['port']['fixed_ips'] = [{'ip_address': fixed_ip}]
 ```
 ...with:
 ```bash
-port_req_body['port']['fixied_ips'] = [{'ip_address': str(fixed_ip)}]
+port_req_body['port']['fixed_ips'] = [{'ip_address': str(fixed_ip)}]
 ```
 
 Save the file and restart nova-compute:
