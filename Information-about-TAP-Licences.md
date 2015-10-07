@@ -8,7 +8,7 @@ TAP incorporates many open-source technologies, integrating them in one platform
 
 TAP supports popular development environments, such as iPython Notebook and RStudio®, so data scientists can continue to use their favorite tools to analyze big data hosted on TAP.  System operators can opt to install iPython Notebook and RStudio®, along with TAP to make them available on TAP.
 
-TAP can be deployed on AWS and OpenStack.  For more information on Mirantis OpenStack, see Mirantis.  For more information on Red Hat OpenStack, see Red Hat.
+TAP can be deployed on AWS and OpenStack.  For more information on Mirantis OpenStack, see [Mirantis](https://www.mirantis.com/products/mirantis-openstack-software/).  For more information on Red Hat OpenStack, see [Red Hat](https://www.redhat.com/en/insights/openstack).
 
 TAP offers integration with many popular big data analytics tools and services, such as H2O and Arcadia, so users can access them on the TAP platform.  TAP does not distribute nor install these tools.  For more information on these tools and services, please contact their respective providers.
 
