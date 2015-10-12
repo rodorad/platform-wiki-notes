@@ -8,7 +8,7 @@
 For GRE setups 4 NICs per machine are required.
 
 # Initial setup
--	Download the latest version of Mirantis distribution from Mirantis website and make a bootable image on a USB drive using Xfburn for Linux* or ImgBurn for Windows*.
+-	Download the latest version of Mirantis distribution (we recommend Mirants OpenStack 6.0) from Mirantis website and make a bootable image on a USB drive using Xfburn for Linux* or ImgBurn for Windows*.
 -	Be sure that your network is configured properly: 4 broadcast address, 4 gateways.
 -	In fuel node, set up booting up from the USB drive and save the options.
 -	When you see the GRUB installer, press the Tab key. Provide network parameters and change _showmenu=no_ to _showmenu=yes_.
