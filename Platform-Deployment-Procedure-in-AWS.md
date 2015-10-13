@@ -81,7 +81,7 @@ During AWS Configuration you obtained AWS keys:
     ~/.ssh/bosh.pem
 ```
 #### Edit variable file
-Generate a secure password for CF admin account, write it down. Using a text editor (in the examples we will use vi) edit the **terraform.tfvars** file. Fill **AWS keys**, **AWS SSH keyfile path**, **AWS deployment region**, also set up your future **CF admin password**, as well as appropriate **deployment size**.
+Generate a secure password for CF admin account, write it down. Using a text editor (in the examples we will use vi) edit the **terraform.tfvars** file. Fill **AWS keys**, **AWS SSH keyfile path**, **AWS deployment region**, also set up your future **CF admin password**, as well as appropriate **deployment size**. Note that cf_admin_pass should not contain special characters due to the limitations of CloudFoundry, please use characters [0-9A-Za-z].
 
 ```bash
     $ vi terraform.tfvars
