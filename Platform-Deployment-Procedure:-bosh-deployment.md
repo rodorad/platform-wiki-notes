@@ -28,7 +28,7 @@ Locate path `meta` and fill the following section with your own values:
     senderName: Domain
 ```
 Generate a secure password for uaac_admin_client_secret. 
-Locate path `meta` and set generated password to `secret`.
+Locate path `meta` and set generated password to `secret`. Note that this password should not contain special characters due to the limitations of CloudFoundry, please use characters [0-9A-Za-z].
 ```YAML
 ...
 meta:
