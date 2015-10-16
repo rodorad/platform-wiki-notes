@@ -111,6 +111,8 @@ Use any editor you like to edit the _terraform.tfvars_ file.
  20 dns1="{dns server}" # comment if not needed
  21 dns2=”{dns server}" # comment if not needed
 ```
+NOTE:_**Some of these variables are obviuos because they were talked about earlier but others are not clear. More explanation for every key will be greatly helpfull. The dns options is stated as optional but the make plan will not run without it.**_
+
 After you set all variables, run the following:
 ```
 make update
@@ -118,6 +120,7 @@ make plan
 make apply
 make provision
 ```
+NOTE:_**The dns options is stated as optional but the make plan will not run without it.**_
 
 Because OpenStack resources aren’t always available when requested, don’t panic if an error occurs while the _make apply_ or _make provision_ commands execute. Just run the command again.
 
