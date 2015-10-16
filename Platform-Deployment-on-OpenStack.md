@@ -84,6 +84,7 @@ git clone git@github.com:trustedanalytics/terraform-openstack-intel.git
 cd terraform-openstack-intel
 cp terraform.tfvars.example terraform.tfvars
 ```
+NOTE:_**This repo needs to be revisioned. We don't want customers to grab master unless they understand the risks.**_
 
 ### Providing information for terraform-openstack-intel
 You will need to create keys for CDH and Jumpbox. You can make it by using the _ssh-keygen_ command. 
@@ -121,6 +122,7 @@ make apply
 make provision
 ```
 NOTE:_**The dns options is stated as optional but the make plan will not run without it. Doesn't work with the git client in centos, need to update**_
+NOTE:_**Had to update the trustedanalytics/terraform-openstack-intel/cdh/openstack.tf. updated the consul module to use the https url.**_
 
 Because OpenStack resources aren’t always available when requested, don’t panic if an error occurs while the _make apply_ or _make provision_ commands execute. Just run the command again.
 
