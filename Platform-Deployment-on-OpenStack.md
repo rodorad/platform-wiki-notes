@@ -1,6 +1,6 @@
 
 # Prerequisites
-
+NOTE: _**What is the assumed skill of the user?**_
 > We constantly strive to make TAP deployment easier and more resilient to physical environment differences. Currently, TAP validated prerequisites include:
 
 * Kilo (Mieantis 7.0) or Juno (Mirantis 6.0) OpenStack
@@ -11,6 +11,8 @@
 * Due to extensive testing GRE networking is highly recommended
 * 1 domain (internal OK)
 * Ability to access the following domains (proxy OK)
+
+NOTE: _** Is it possible to automate all these checks with the openstack api? No instructions are given on how to find what versions i'm running. You might have situations where openstack installation was done by another team and DP2 installation is done by another like infra and dev team **_
 
 ```
 *.amazonaws.com
@@ -35,6 +37,9 @@
 *.travis-ci.org
 *.rubini.us
 ```
+
+NOTE: _**We need a script to check if all the required domains are accesible**_
+
 ## Deploying Openstack
 
 The detailed installation procedure for Mirantis OpenStack, along with possible problem resolutions can be found [here](https://github.com/trustedanalytics/platform-wiki/wiki/Mirantis-OpenStack-Deployment).
@@ -48,6 +53,8 @@ wget https://s3-us-west-1.amazonaws.com/openstack-images-dp2/centos-6-x86_64.qco
   ``` 
 wget https://s3-us-west-1.amazonaws.com/openstack-images-dp2/trusty-server-cloudingimg-amd64-disk1.img -O ubuntu-trusty.img
   ```
+NOTE: _**Not really clear how to add them or what format they were. luckly for me they were both qemu**_
+  
 2. Log on with admin rights.
 3. _Change default flavor setting (memory) of Openstack. (follow http://docs.openstack.org/user-guide-admin/cli_manage_flavors.html)_
 9. Go to the identity panel and create a new project.
@@ -65,6 +72,7 @@ id_6e6058c8-4669-4b57-b787-9c19adecc3d2
   ``` 
 http://10.91.120.12:5000/v2.0 
   ```
+NOTE: _**It would be nice to automate all the above steps with the openstack api. It's a rather alborous process to do manually. If we need to use firebug to find vital configuration details we should investigate the use of the openstack api.**_
 
 ## Local setup
 For the first time please follow instructions from here: https://github.com/trustedanalytics/platform-wiki/wiki/Platform-Deployment-Procedure-local-setup
