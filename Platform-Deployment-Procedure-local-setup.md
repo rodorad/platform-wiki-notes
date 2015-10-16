@@ -22,7 +22,7 @@ You likely already have Git installed if you do any development locally.  Follow
  - OSX: `brew install git`
  - RHEL/CentOS/Fedora: `sudo yum install -y git`
  - Ubuntu/Debian: `sudo apt-get install -y git`
-
+NOTE: _**the default git version(1.7.1) for centos doesn't work.**_ 
 When the Git client is ready, configure it
 
 `    $ vi ~/.ssh/config`
