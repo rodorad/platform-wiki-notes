@@ -92,3 +92,4 @@ create your local ~/.gitconfig file with content:
     insteadOf = git@github.com:
 
 ```
+NOTE: _** the second rule has non standard quotes doesn't parse when running git commands**_
