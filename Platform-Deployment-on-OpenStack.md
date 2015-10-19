@@ -66,6 +66,8 @@ NOTE: _**Not really clear how to add them or what format they are. Luckly for me
   ``` 
 id_6e6058c8-4669-4b57-b787-9c19adecc3d2 
   ```
+_**We need to mention what configuration paramater this value will be assigned to. We are assiging an ID to variable called floating_ip_pool="{name of network}. I thought i had to create a floating ip pool my self before because it's not clear that this ID is being assigned to floating_ip_pool. **_
+  
 9. Copy the ID without "id_" prefix (ie: 6e6058c8-4669-4b57-b787-9c19adecc3d2) to a file with the project ID and copy the name of the network. 
 9. The last thing you need is the IP address of the identity API. You can find it in _Project > Compute > Access & security > API access_. Copy the IP address to a file with the project ID. The IP address will look like this:
 
@@ -73,6 +75,9 @@ id_6e6058c8-4669-4b57-b787-9c19adecc3d2
 http://10.91.120.12:5000/v2.0 
   ```
 NOTE: _**It would be nice to automate all the above steps with the openstack api. It's a rather alborous process to do manually. If we need to use firebug to find vital configuration details we should investigate the use of the openstack api.**_
+
+
+NOTE: _**If a value needs to be put in tfvars the correlation needs to be clear and at the time that it's mentioned.**_
 
 ## Local setup
 For the first time please follow instructions from here: https://github.com/trustedanalytics/platform-wiki/wiki/Platform-Deployment-Procedure-local-setup
@@ -114,8 +119,9 @@ Use any editor you like to edit the _terraform.tfvars_ file.
 ```
 NOTE:_**Some of these variables are obviuos because they were talked about earlier but others are not clear. More explanation for every key will be greatly helpfull. **_
 
-NOTE: _**floating_ip_pool and network_external_id variables names are very confusing. A more accurate name would be network_id, network_name. It is especially confussing when the name and the variable placeholder done't match.**_
-
+NOTE: _**floating_ip_pool and network_external_id variables names are very confusing. A more accurate name would be network_id, network_name. It is especially confussing when the name and the variable placeholder don't match. To a first time reader "floating_ip_pool={name of network}" means i need the name of the floating ip pool which was not explained as a requirement and was not talked about erlier in the document. I started reading up on floating ips and how to create them. I eventually found the command that listed floating ip pools and found out i had none witch lead me to believe it was the reason why the script wasn't working.**_
+NOTE: _**floating_ip_pool should be changed to network_id={starts with id_HASH. Only the HASH should be used, remove 'id_'}**_
+NOTE: _**network_external_id should be changed to network network_name={name of network, usually 'net04_ext'}**_
 NOTE: _**The dns options is stated as optional but the make plan will not run without it. We used the google dns has a default. I commnted out the dns has suggested but terraform doesn't run. I also left it blank and it broke.**_
 
 After you set all variables, run the following:
