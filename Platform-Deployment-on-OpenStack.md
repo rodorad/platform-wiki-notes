@@ -53,7 +53,7 @@ wget https://s3-us-west-1.amazonaws.com/openstack-images-dp2/centos-6-x86_64.qco
   ``` 
 wget https://s3-us-west-1.amazonaws.com/openstack-images-dp2/trusty-server-cloudingimg-amd64-disk1.img -O ubuntu-trusty.img
   ```
-NOTE: _**Not really clear how to add them or what format they were. luckly for me they were both qemu**_
+NOTE: _**Not really clear how to add them or what format they are. Luckly for me they both seem like qemu format. **_
   
 2. Log on with admin rights.
 3. _Change default flavor setting (memory) of Openstack. (follow http://docs.openstack.org/user-guide-admin/cli_manage_flavors.html)_
