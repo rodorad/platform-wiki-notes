@@ -132,7 +132,8 @@ NOTE: _**We need to specify what commands need to run when make apply fails. Whe
 
 Because OpenStack resources aren’t always available when requested, don’t panic if an error occurs while the _make apply_ or 
 _make provision_ commands execute. Just run the command again.
-_**How do you distinguish between good and bad errors?**_
+
+NOTE: _**How do you distinguish between good and bad errors?**_
 
 ## Set up bosh deployment
 Follow the instructions from this document: https://github.com/trustedanalytics/platform-wiki/wiki/Platform-Deployment-Procedure:-bosh-deployment
