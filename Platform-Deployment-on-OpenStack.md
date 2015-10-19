@@ -12,7 +12,7 @@ NOTE: _**What is the assumed skill of the user?**_
 * 1 domain (internal OK)
 * Ability to access the following domains (proxy OK)
 
-NOTE: _** Is it possible to automate all these checks with the openstack api? No instructions are given on how to find what versions i'm running. You might have situations where openstack installation was done by another team and DP2 installation is done by another like infra and dev team. **_
+NOTE: _**Is it possible to automate all these checks with the openstack api? No instructions are given on how to find what versions im running. You might have situations where openstack installation was done by another team and DP2 installation is done by another like infra and dev team.**_
 
 ```
 *.amazonaws.com
@@ -38,7 +38,7 @@ NOTE: _** Is it possible to automate all these checks with the openstack api? No
 *.rubini.us
 ```
 
-NOTE: _** We need a script to check if all the required domains are accesible **_
+NOTE: _**We need a script to check if all the required domains are accesible**_
 
 ## Deploying Openstack
 
@@ -54,7 +54,7 @@ wget https://s3-us-west-1.amazonaws.com/openstack-images-dp2/centos-6-x86_64.qco
 wget https://s3-us-west-1.amazonaws.com/openstack-images-dp2/trusty-server-cloudingimg-amd64-disk1.img -O ubuntu-trusty.img
   ```
   
-NOTE: _** Not really clear how to add them or what format they are. Luckly for me they both seem like qemu format. **_
+NOTE: _**Not really clear how to add them or what format they are. Luckly for me they both seem like qemu format.**_
   
 2. Log on with admin rights.
 3. _Change default flavor setting (memory) of Openstack. (follow http://docs.openstack.org/user-guide-admin/cli_manage_flavors.html)_
@@ -68,7 +68,7 @@ NOTE: _** Not really clear how to add them or what format they are. Luckly for m
 id_6e6058c8-4669-4b57-b787-9c19adecc3d2 
   ```
   
-NOTE: _** We need to mention what configuration paramater this value will be assigned to. We are assiging an ID to variable called floating_ip_pool="{name of network}. I thought i had to create a floating ip pool my self before because it's not clear that this ID is being assigned to floating_ip_pool. **_
+NOTE: _**We need to mention what configuration paramater this value will be assigned to. We are assiging an ID to variable called floating_ip_pool="{name of network}. I thought i had to create a floating ip pool my self before because it's not clear that this ID is being assigned to floating_ip_pool.**_
   
 9. Copy the ID without "id_" prefix (ie: 6e6058c8-4669-4b57-b787-9c19adecc3d2) to a file with the project ID and copy the name of the network. 
 9. The last thing you need is the IP address of the identity API. You can find it in _Project > Compute > Access & security > API access_. Copy the IP address to a file with the project ID. The IP address will look like this:
@@ -80,7 +80,7 @@ http://10.91.120.12:5000/v2.0
 NOTE: _**It would be nice to automate all the above steps with the openstack api. It's a rather alborous process to do manually. If we need to use firebug to find vital configuration details we should investigate the use of the openstack api.**_
 
 
-NOTE: _** If a value needs to be put in tfvars the correlation needs to be clear and at the time that the value is mentioned. **_
+NOTE: _**If a value needs to be put in tfvars the correlation needs to be clear and at the time that the value is mentioned.**_
 
 ## Local setup
 For the first time please follow instructions from here: https://github.com/trustedanalytics/platform-wiki/wiki/Platform-Deployment-Procedure-local-setup
@@ -121,11 +121,11 @@ Use any editor you like to edit the _terraform.tfvars_ file.
  20 dns1="{dns server}" # comment if not needed
  21 dns2=”{dns server}" # comment if not needed
 ```
-NOTE:_** Some of these variables are obviuos because they were talked about earlier but others are not clear. More explanation for every key will be greatly helpfull. **_
+NOTE:_**Some of these variables are obviuos because they were talked about earlier but others are not clear. More explanation for every key will be greatly helpfull.**_
 
-NOTE: _** floating_ip_pool and network_external_id variables names are very confusing. A more accurate name would be network_id, network_name. It is especially confussing when the name and the variable placeholder don't match. To a first time reader "floating_ip_pool={name of network}" means i need the name of the floating ip pool which was not explained as a requirement and was not talked about erlier in the document. I started reading up on floating ips and how to create them. I eventually found the command that listed floating ip pools and found out i had none witch lead me to believe it was the reason why the script wasn't working. **_
+NOTE: _**floating_ip_pool and network_external_id variables names are very confusing. A more accurate name would be network_id, network_name. It is especially confussing when the name and the variable placeholder don't match. To a first time reader "floating_ip_pool={name of network}" means i need the name of the floating ip pool which was not explained as a requirement and was not talked about erlier in the document. I started reading up on floating ips and how to create them. I eventually found the command that listed floating ip pools and found out i had none witch lead me to believe it was the reason why the script wasn't working.**_
 
-NOTE: _** floating_ip_pool should be changed to network_id={starts with id_HASH. Only the HASH should be used, remove 'id_'} **_
+NOTE: _**floating_ip_pool should be changed to network_id={starts with id_HASH. Only the HASH should be used, remove 'id_'}**_
 
 NOTE: _**network_external_id should be changed to network network_name={name of network, usually 'net04_ext'}**_
 
@@ -141,7 +141,7 @@ make provision
 NOTE:_**The dns options is stated as optional but the make plan will not run without it. Doesn't work with the git client in centos, need to update**_
 NOTE:_**Had to update the trustedanalytics/terraform-openstack-intel/cdh/openstack.tf. updated the consul module to use the https url. It didn't matter that i had .gitconfig.**_
 
-NOTE: _**We need to specify what commands need to run when make apply fails. When make apply inevatably fails we need a list of commands that the user can run to get back to a clean starting point. **_
+NOTE: _**We need to specify what commands need to run when make apply fails. When make apply inevatably fails we need a list of commands that the user can run to get back to a clean starting point.**_
 
 Because OpenStack resources aren’t always available when requested, don’t panic if an error occurs while the _make apply_ or 
 _make provision_ commands execute. Just run the command again.
