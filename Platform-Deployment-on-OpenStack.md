@@ -139,6 +139,7 @@ make apply
 make provision
 ```
 NOTE:_**The dns options is stated as optional but the make plan will not run without it. Doesn't work with the git client in centos, need to update**_
+
 NOTE:_**Had to update the trustedanalytics/terraform-openstack-intel/cdh/openstack.tf. updated the consul module to use the https url. It didn't matter that i had .gitconfig.**_
 
 NOTE: _**We need to specify what commands need to run when make apply fails. When make apply inevatably fails we need a list of commands that the user can run to get back to a clean starting point.**_
