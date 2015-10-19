@@ -112,7 +112,11 @@ Use any editor you like to edit the _terraform.tfvars_ file.
  20 dns1="{dns server}" # comment if not needed
  21 dns2=”{dns server}" # comment if not needed
 ```
-NOTE:_**Some of these variables are obviuos because they were talked about earlier but others are not clear. More explanation for every key will be greatly helpfull. The dns options is stated as optional but the make plan will not run without it.**_
+NOTE:_**Some of these variables are obviuos because they were talked about earlier but others are not clear. More explanation for every key will be greatly helpfull. **_
+
+NOTE: _**floating_ip_pool and network_external_id variables names are very confusing. A more accurate name would be network_id, network_name. It is especially confussing when the name and the variable placeholder done't match.**_
+
+NOTE: _**The dns options is stated as optional but the make plan will not run without it. We used the google dns has a default. I commnted out the dns has suggested but terraform doesn't run. I also left it blank and it broke.**_
 
 After you set all variables, run the following:
 ```
