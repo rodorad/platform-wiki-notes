@@ -130,7 +130,9 @@ NOTE:_**Had to update the trustedanalytics/terraform-openstack-intel/cdh/opensta
 
 NOTE: _**We need to specify what commands need to run when make apply fails. When make apply inevatably fails we need a list of commands that the user can run to get back to a clean starting point. **_
 
-Because OpenStack resources aren’t always available when requested, don’t panic if an error occurs while the _make apply_ or _make provision_ commands execute. Just run the command again.
+Because OpenStack resources aren’t always available when requested, don’t panic if an error occurs while the _make apply_ or 
+_make provision_ commands execute. Just run the command again.
+_**How do you distinguish between good and bad errors?**_
 
 ## Set up bosh deployment
 Follow the instructions from this document: https://github.com/trustedanalytics/platform-wiki/wiki/Platform-Deployment-Procedure:-bosh-deployment
