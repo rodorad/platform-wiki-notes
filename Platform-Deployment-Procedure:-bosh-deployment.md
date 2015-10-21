@@ -11,6 +11,7 @@ Make sure that you have latest gems
     $ cd ~/workspace/deployments/cf-boshworkspace/
     $ bundle update
 ```
+NOTE: _**The directory doesn't exist**_
 
 Edit deployment file
 * for AWS deployments: 
