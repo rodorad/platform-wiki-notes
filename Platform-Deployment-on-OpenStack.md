@@ -12,7 +12,7 @@ NOTE: _**What is the assumed skill of the user?**_
 * 1 domain (internal OK)
 * Ability to access the following domains (proxy OK)
 
-NOTE: _**Is it possible to automate all these checks with the openstack api? No instructions are given on how to find what versions im running. You might have situations where openstack installation was done by another team and DP2 installation is done by another like infra and dev team.**_
+NOTE: _**Is it possible to automate all these checks with the openstack api? No instructions are given on how to find what versions i'm running. You might have situations where openstack installation was done by another team and DP2 installation is done by another like infra and dev team.**_
 
 ```
 *.amazonaws.com
@@ -55,6 +55,7 @@ wget https://s3-us-west-1.amazonaws.com/openstack-images-dp2/trusty-server-cloud
   ```
   
 NOTE: _**Not really clear how to add them or what format they are. Luckly for me they both seem like qemu format.**_
+NOTE: _**Miss configured images cause failed builds it would be nice to have auto detection of build format**_
   
 2. Log on with admin rights.
 3. _Change default flavor setting (memory) of Openstack. (follow http://docs.openstack.org/user-guide-admin/cli_manage_flavors.html)_
@@ -123,7 +124,7 @@ Use any editor you like to edit the _terraform.tfvars_ file.
 ```
 NOTE:_**Some of these variables are obviuos because they were talked about earlier but others are not clear. More explanation for every key will be greatly helpfull.**_
 
-NOTE: _**floating_ip_pool and network_external_id variables names are very confusing. A more accurate name would be network_id, network_name. It is especially confussing when the name and the variable placeholder don't match. To a first time reader "floating_ip_pool={name of network}" means i need the name of the floating ip pool which was not explained as a requirement and was not talked about erlier in the document. I started reading up on floating ips and how to create them. I eventually found the command that listed floating ip pools and found out i had none witch lead me to believe it was the reason why the script wasn't working.**_
+NOTE: _**floating_ip_pool and network_external_id variables names are very confusing. A more accurate name would be network_id, network_name. It is especially confussing when the variable name and the variable placeholder don't match. To a first time reader "floating_ip_pool={name of network}" means i need the name of the floating ip pool which was not explained as a requirement and was not talked about erlier in the document. I started reading up on floating ips and how to create them. I eventually found the command that listed floating ip pools and found out i had none witch lead me to believe it was the reason why the script wasn't working.**_
 
 NOTE: _**floating_ip_pool should be changed to network_id={starts with id_HASH. Only the HASH should be used, remove 'id_'}**_
 
@@ -151,3 +152,8 @@ NOTE: _**How do you distinguish between good and bad errors?**_
 
 ## Set up bosh deployment
 Follow the instructions from this document: https://github.com/trustedanalytics/platform-wiki/wiki/Platform-Deployment-Procedure:-bosh-deployment
+
+
+NOTE: _**All the initial build errors were due to the lack of documentation when setting up the tfvars**_
+
+NOTE: _**I had to manually add the floating ip the bastion server after the build was done**_
