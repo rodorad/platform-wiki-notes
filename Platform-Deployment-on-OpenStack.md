@@ -145,6 +145,10 @@ NOTE:_**Had to update the trustedanalytics/terraform-openstack-intel/cdh/opensta
 
 NOTE: _**We need to specify what commands need to run when make apply fails. When make apply inevatably fails we need a list of commands that the user can run to get back to a clean starting point.**_
 
+NOTE: _**open stack fails to delete instance when the mounted volume is not removed first.**_
+
+NOTE: _**If we know of specific problems we know a customer might run into we should explicitly state it with a link to openstack for a workaround.**_
+
 Because OpenStack resources aren’t always available when requested, don’t panic if an error occurs while the _make apply_ or 
 _make provision_ commands execute. Just run the command again.
 
@@ -154,6 +158,6 @@ NOTE: _**How do you distinguish between good and bad errors?**_
 Follow the instructions from this document: https://github.com/trustedanalytics/platform-wiki/wiki/Platform-Deployment-Procedure:-bosh-deployment
 
 
-NOTE: _**All the initial build errors were due to the lack of documentation when setting up the tfvars**_
+NOTE: _**All the initial build errors were due to the lack/incorrect/unclear documentation when setting up the tfvars**_
 
 NOTE: _**I had to manually add the floating ip the bastion server after the build was done**_
