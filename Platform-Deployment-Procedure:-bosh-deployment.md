@@ -4,7 +4,7 @@ From your local machine log in to box shown as bastion_ip
 ```bash
     $ ssh -i ~/.ssh/bosh.pem ubuntu@bastion_ip
 ```
-NOTE: _**this command is incorrect it should. The user needs to use the pem file they used for jump_box_key path**_
+NOTE: _**this command is incorrect it should. The user needs to use the pem file they used for jump_box_key path. Make it obvious that bastion_ip is not a variable and only a placeholder**_
 
 Make sure that you have latest gems
 ```bash
