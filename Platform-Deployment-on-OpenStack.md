@@ -154,6 +154,8 @@ _make provision_ commands execute. Just run the command again.
 
 NOTE: _**How do you distinguish between good and bad errors?**_
 
+NOTE: _**make provision fails silently**_
+
 ## Set up bosh deployment
 Follow the instructions from this document: https://github.com/trustedanalytics/platform-wiki/wiki/Platform-Deployment-Procedure:-bosh-deployment
 
