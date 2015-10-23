@@ -29,6 +29,8 @@ Locate path `meta` and fill the following section with your own values:
     senderEmail: support@domain.com
     senderName: Domain
 ```
+NOTE: _**explain consequences if mail is not configured and how to configure it later**_
+
 Generate a secure password for uaac_admin_client_secret. 
 Locate path `meta` and set generated password to `secret`. Note that this password should not contain special characters due to the limitations of CloudFoundry, please use characters [0-9A-Za-z].
 ```YAML
