@@ -98,8 +98,16 @@ Update the maximum amount of memory to 30 GB:
     $ uaac client update cf \
       --scope cloud_controller.admin,cloud_controller.read,cloud_controller.write,doppler.firehose,openid,password.write,scim.read,scim.write,console.admin
 ```
+
+NOTE:_**When ever possible we should avoid user side compilation. The first time setup of a development environment is quite laborous and should be avoided by customers when ever possible.**_
 ## Push apps and services
 Follow the instructions in [Platform Parent](https://github.com/trustedanalytics/platform-parent) readme.
+
+NOTE: _**This part of the installation was ignored and instead of compiling packages they were downloaded from nexus directly. This breaks The entire installation instructions from here on down**_
+
+NOTE: _**smtp service was missing the  port_ssl configurations**_
+
+NOTE: _**The user_management service needed to have it's timeout increased to 180 seconds to accomodate the slowness of openstack.**_
 
 Next, clone two repos:
 ```bash
@@ -123,6 +131,10 @@ cd cloudfoundry-mkappstack
 cp appstack.mk.tmpl appstack.mk
 cp secret.mk.tmpl secret.mk
 ```
+
+NOTE: _**deployments/docker-openstack.yml doesn't get the correct admin secret specified in workspace/deployments/cf-boshworkspace/deployments/cf-openstack-tiny.yml**_
+
+
 Enter your environment information to secret.mk. Edit cloudfoundry api endpoint, user,password, org & space.
 
 Open appstack.mk and change artifact_pfx to the store url. Uncomment proxy and noproxy and put correct proxy values there.
@@ -130,6 +142,14 @@ Open appstack.mk and change artifact_pfx to the store url. Uncomment proxy and n
 Now you are ready to deploy whole platform:
 ```bash
 make deploy
+```
+NOTE: _**While i'm not sure how to recreate the problem i tried several times to run make deploy and got this error serveral times**_
+```
+ubuntu@bastion:~/workspace/tools/cloudfoundry-mkappstack$ make deploy
+[upenn] -{ok}-[cli] authenticated: User:admin API:http://api.10.54.8.57.xip.io Org:tap Spac                                                                                                                                          e:upenn Space GUID:7e440cde-f1a6-4b52-8a2f-9bf3e0b9da83
+lib/ruby/cfspace2mft.rb:52:in `<main>': undefined method `map' for nil:NilClass (NoMethodEr                                                                                                                                          ror)
+rm upenn_upsi.json upenn_services.json sbks/docker/sbkrmt_mfst.yml upenn_upsi.yml upsi/hive                                                                                                                                          /upsrmt_mfst.yml upsi/gorouter-provider/upsrmt_mfst.yml upenn_summary.json upsi/kerberos-se                                                                                                                                          rvice/upsrmt_mfst.yml upsi/sso/upsrmt_mfst.yml upsi/nats-provider/upsrmt_mfst.yml upenn_sum                                                                                                                                          mary.yml upenn_sbrokers.json upenn_sbrokers.yml upsi/external-tools/upsrmt_mfst.yml
+
 ```
 
 # Devops remarks
