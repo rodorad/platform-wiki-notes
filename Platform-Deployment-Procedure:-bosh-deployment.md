@@ -70,7 +70,7 @@ Login to Cloud Foundry using admin account and create organization and space
     $ cf create-space <space_name>
     $ cf target -s <space_name>
 ```
-NOTE: _**cf_api_id doesn't exist. if it does where can i get it? The only close to this is the cf_api. For my installtion cf_api=api.run.10.54.8.57.xip.io i'm sure this is the value but the doc needs to be updated**_
+NOTE: _**cf_api_id doesn't exist. if it does where can i get it? The only close to this is the cf_api. For my installtion cf_api=api.run.10.54.8.57.xip.io i'm sure this is the value but the doc needs to be updated. cf_api value is close enought to confuse you and is also wrong becuase .run is no longer used in the url**_
 
 #### Update default quota
 Update the maximum amount of memory to 30 GB:
